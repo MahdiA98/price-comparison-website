@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="eu.mahdiahbab.cst3130.GameComparison" table="comparison">
+  
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="increment"/>
+    </id>
+	
+    <property name="price" type="double">
+      <column name="price"/>
+    </property>
+	
+	<property name="websiteName" type="string">
+      <column name="website_name"/>
+    </property>
+	
+	<property name="linkToGame" type="string">
+      <column name="link"/>
+    </property>
+	
+	<many-to-one name="game" class="eu.mahdiahbab.cst3130.Game" fetch="select" cascade="all">
+      <column name="game_id" not-null="true" />
+    </many-to-one>
+
+  </class>
+</hibernate-mapping>

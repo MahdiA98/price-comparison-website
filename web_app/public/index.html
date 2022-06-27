@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Price Comparison Website</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="client.js"></script>
+</head>
+<body>
+    <header> <!-- container that includes all elements in header -->
+        <div class="containerHeader">
+            <img src="images/logo3.png">
+            <h1>Comparsion-R-Us</h1>
+            <input id="searchText">
+            <button id="searchButton" onclick=searchGame()>Search</button>
+        </div>
+    </header>
+
+    <div class="containerBanner"> <!-- container that includes all elements in banner -->
+        <div class="banner">
+            <h1>#5 BEST GAMES<br/> COMPARISON SITE</h1>
+            <p>Welcome to the site, Comparsion-R-Us<br/> Click on the games below, or search by their names. </p>
+        </div>
+    </div>
+    <!-- Previous page div -->
+    <div id="previousPage" onclick=loadPageGame(1)></div>
+
+    <!-- Home page div -->
+    <div id="homePage"></div>
+
+    <!-- Comparison page div(s)-->
+    <div id="containerComparison"></div>
+    <div id="containerComparison2"></div>
+
+    <!-- Search page div -->
+    <div id="searchResult"></div>
+
+    <!-- Pagination div -->
+    <div id="containerPagination"></div>
+
+    <footer> <!-- container that includes all elements in footer (all static, links do not redirect user anywhere) -->
+        <div class="containerFooter"> 
+            <div class="footerContact">
+                <h2>CONTACT</h2>
+                <p>275 Romford Lane <br>London <br>England <br>RM13 8BJ <br>020 7123 1234 <br></p>
+            </div>
+
+        <div class="footerNav"> 
+                <h2>USEFUL LINKS</h2>
+                    <ul>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Report</a></li>
+                    <li><a href="">Launch Chat</a></li>
+                    </ul>
+            </div>
+
+        <div class="footerAbout"> 
+                <h2>ABOUT</h2>
+                    <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Help Center</a></li>
+                    </ul>
+            </div>
+
+            <div class="footerNewsletter"> 
+                <h2>SUBSCRIBE:</h2>
+                <input type="email" placeholder="Enter email..."> 
+                <button type="submit">SIGN UP</button> 
+            </div>
+
+            <div class="footerSocial"> 
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-snapchat"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,315 @@
+* {
+    font-family: sans-serif;  /* resetting padding & margin, and establishing font family  */
+    padding: 0;
+    margin: 0;
+}
+
+/* body settings */
+body {
+    background-color:white;
+}
+
+/* Header */
+.containerHeader {
+    width: 90%; /* Settings for header box */
+    margin: auto; 
+    overflow: hidden;
+}
+
+header {
+    background-color: #4b4b4b;
+}
+
+header h1 {
+  position: relative;
+  bottom: 30px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  margin: 0px 0px 20px 20px;
+  display: inline-block;
+  
+}
+
+header img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Banner */
+.containerBanner {
+    width: 100%; 
+    margin: auto; 
+    overflow: hidden;
+}
+
+.banner {
+    min-height: 450px; /*setting background as image in container w/ 600px min height. Set to no repeat and height -340px to move image down to have bottom section appear. */
+    background: url(images/background2.jpg) no-repeat 0 -150px;
+    border-bottom: black 3px solid;
+    border-top: black 3px solid;
+}
+
+.banner img {
+    margin: 60px 0px 0px 150px; /* image of tank position */
+    position: absolute;
+}
+
+.banner h1 {
+    margin: 105px 0px 0px 300px; 
+    font-size: 75px;
+    color: white;
+    position: absolute;
+}
+
+.banner p {
+    margin: 320px 0px 0px 310px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+}
+
+/*Previous page link */
+#previousPage {
+  position: absolute;
+  left: 50px;
+  top: 600px;
+  color: blue;
+}
+
+/* Search Page */
+#searchResult h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 100px;
+}
+
+
+#searchText {
+  position: relative;
+  left: 100px;
+  bottom: 45px;
+  width: 400px;
+  height: 30px;
+}
+
+#searchButton {
+  position: relative;
+  left: 100px;
+  bottom: 41px;
+  width: 75px;
+  height: 35px;
+  text-align: left;
+  font-size: 20px;
+  background-color: #E63946;
+}
+
+/* Home */
+#homePage table{
+  margin-top: 10px;
+  margin-left: auto; 
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+#homePage td {
+  font-size: 20px;
+  width: 50px;
+  padding: 30px;
+  text-align: center;
+  word-wrap: break-word;
+  border: 3px solid grey;
+}
+
+#homePage p {
+  margin-top: 30px;
+}
+
+#homePage td:hover {
+  background-color: rgb(209, 196, 196);
+  cursor: pointer;
+}
+
+#homePageImage {
+  width: 250px;
+  height: 250px;
+}
+
+#homePagePrice {
+  font-weight: bold;
+}
+
+
+/* Comparison Page */
+#containerComparison table {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 15px;
+  table-layout: fixed;
+  width: 700px;
+  border: 3px solid grey;
+  border-radius: 5%;
+}
+
+#containerComparison2 table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#containerComparison img {
+  height: 300px;
+  width: 300px;
+}
+
+#containerComparison td {
+  word-wrap: break-word;
+  font-size: 40px;
+}
+
+#containerComparison p:first-of-type {
+  font-size: 20px;
+  color:rgb(29, 29, 255);
+  text-decoration-line: underline;
+}
+
+#containerComparison p {
+  font-size: 20px;
+}
+
+
+#containerComparison2 table{
+  border-collapse: collapse;
+  border: 3px solid grey;
+}
+
+#containerComparison2 td {
+  font-size: 20px;
+  padding: 5px 50px 5px 10px;
+}
+
+
+#comparisonRow td {
+  color: white;
+  font-weight: bold;
+  background-color: lightslategrey;
+}
+
+#link {
+  color: black;
+}
+
+/*pagination*/
+.pagination {
+  display: inline-block;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 5px 5px 5px 5px;
+  margin: 0px 7.5px 0px 7.5px;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: #E63946;
+
+}
+
+#containerPagination {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.containerFooter {
+  width: 85%; /* setting for footer box container */
+  margin: auto; 
+  overflow: hidden;
+}
+
+footer {
+  padding-top: 30px; /* footer banned size and color for background and font */
+  min-height: 150px;
+  background-color: #4b4b4b;;
+  color: white;
+  border-top: black 3px solid;
+}
+
+footer h2 {
+  color: black;
+}
+
+.footerContact {
+  position: absolute; /* Heading with paragraphs that have line breaks (to give illusion of list) positioned left and dotted border on right, that has padding to create space */
+  border-right: solid rgb(51, 50, 50);
+  border-right-style: dashed;
+  padding-right: 100px;
+}
+
+.footerNav {
+  margin-left: 290px; /* Like previous, but heading with list and positioned further to the right */
+  position: absolute;
+  border-right: solid rgb(51, 50, 50);
+  border-right-style: dashed;
+  padding-right: 100px;
+}
+
+.footerNav ul, a {
+  list-style-type: none; /* list of navigation bar, removed hyperlink and list style */
+  text-decoration: none;
+  color: white;
+}
+
+.footerNav a:hover {
+  color: #A8DADC;
+}
+
+.footerAbout {
+  position: absolute; /* header with additional linked pages (doesn't do anything) */
+  margin-left: 620px;
+  border-right: solid rgb(51, 50, 50);
+  border-right-style: dashed;
+  padding-right: 90px;
+}
+
+.footerAbout ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footerAbout a:hover {
+  color: #A8DADC;
+}
+
+.footerSocial {
+  margin: 10px 0px 0px 1240px; /* social icons position set to right, underneat newsletter */
+}
+
+.footerSocial a {
+  padding: 2px;
+}
+
+.footerSocial a:hover {
+  color:#A8DADC;
+}
+
+.footerNewsletter {
+  margin-left: 880px; /* newsletter box positioned to the right of footer */
+}
+
+.footerNewsletter input, button {
+  padding: 5px;
+  display: inline-block;
+}
+
+.footerNewsletter button {
+  background-color: #E63946; /* button to sign up for newsletter, next to input field */
+  color: white;
+}

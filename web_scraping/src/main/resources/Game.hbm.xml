@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="eu.mahdiahbab.cst3130.Game" table="games">
+  
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="increment"/>
+    </id>
+	
+    <property name="name" type="string">
+      <column name="name"/>
+    </property>
+	
+	<property name="image" type="string">
+      <column name="image"/>
+    </property>
+	
+	<set name="comparisons" table="comparison" inverse="true" cascade="all" lazy="true" fetch="select">
+      <key>
+        <column name="game_id" not-null="true" />
+      </key>
+      <one-to-many class="eu.mahdiahbab.cst3130.GameComparison" />
+    </set>
+	
+	<many-to-one name="platform" class="eu.mahdiahbab.cst3130.GamePlatform" fetch="select" cascade="all">
+      <column name="PLATFORM_ID" not-null="true" />
+    </many-to-one>
+	
+  </class>
+</hibernate-mapping>
