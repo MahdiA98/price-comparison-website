@@ -1,20 +1,51 @@
-# Price Comparison Website
-Built in Java, HTML, CSS and JavaScript in Netbeans 8.2 and Visual Studio Code.
+<h1 align="center">Price Comparison Website</h1>
 
-Developed as part of my summative assignment, for the 'Advanced Web Development with Big Data' module.
+<div align="center">
 
-## Description
-A price comparison website centred around video games. User is able to navigate the website and explore the various prices for individual titles. Clicking on said title, presents the price tags from the other websites (if applicable). Buttons also displayed that acts as a filter for the gaming platforms. Additionally, a search bar is provided to narrow down a specific product.  
+  [![Status](https://img.shields.io/badge/status-complete-success.svg)]() 
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-It uses web scraping, in order to retrieve and store data from third party websites, into a database created within HeidiSQL. This is then delivered to the client-side through the use of AJAX.
+</div>
 
-## Technical
-* Java        - used primarily for the back-end of the project i.e the web data extraction with jsoup API & testing.   
-* Spring      - used in conjuction with Java to increase modularity.
-* Threads     - used to enable multiple threads of execution to occur concurrently. 
-* Maven       - used for the building of the project file environment and dependency managements.
-* HTML + CSS  - used for the front-end aspects of the project i.e the website.
-* JavaScript  - used for the client-side web services, with AJAX and RESTful.
-* HeidiSQL    - used for the storage of data from web scraping.
+---
 
-## Screenshots
+<p align="center"> A price comparison website, centered around video games. Displays the price tags of a particular title from various websites.
+    <br> 
+</p>
+
+## 📝 Table of Contents
+- [About](#about)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Screenshots](#screenshots)
+- [Authors](#authors)
+
+## 🧐 About <a name = "about"></a>
+This project was built as part of my assignment in the 'Advanced Web Development with Big Data' module. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
+
+Data is collected from third-party websites using Web-scraping and stored within a database. This is then displayed to the user when initializing the front-end website, allowing them to compare prices of a certain video game from several websites.
+
+## 🎈 Usage <a name="usage"></a>
+Search for video games using the search bar, located at the top header section of the website. 
+
+Click on the video game to be directed to and displayed with the comparison prices from other websites (if available). Links to the external website provided if the user would like to inquire even further.
+
+Navigate through the pages using the pagination numbers at the bottom of the website. 
+
+## ⛏️ Built Using <a name = "built_using"></a>
+- [Java](https://www.java.com/en/) - Programming Language (back-end)
+- [Spring](https://spring.io/) - Development Framework
+- [Threads](https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html) - Multithreading
+- [JavaScript](https://www.javascript.com/) - Programming Language (front-end)
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [RESTful](https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html) - Web Service
+- [Maven](https://maven.apache.org/) - Project Management Tool
+- [Hibernate](https://hibernate.org/) - Database Mapping
+- [HeidiSQL](https://www.heidisql.com/) - Database
+- [JUnit](https://junit.org/junit5/) - Testing (back-end)
+- [Mocha Chai](https://mochajs.org/) - Testing (front-end)
+
+## 📷 Screenshots <a name = "screenshots"></a>
+
+## ✍️ Authors <a name = "authors"></a>
+- [@MahdiA98](https://github.com/MahdiA98)
