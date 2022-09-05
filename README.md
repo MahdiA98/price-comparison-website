@@ -46,6 +46,9 @@ Navigate through the pages using the pagination numbers at the bottom of the web
 - [Mocha Chai](https://mochajs.org/) - Testing (front-end)
 
 ## 📷 Screenshots <a name = "screenshots"></a>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/67860821/188486952-4e0368de-bf67-4d8a-9205-cde93ba816cf.gif">
+</p>
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@MahdiA98](https://github.com/MahdiA98)
